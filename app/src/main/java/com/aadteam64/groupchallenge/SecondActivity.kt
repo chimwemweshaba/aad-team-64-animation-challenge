@@ -17,7 +17,7 @@ class SecondActivity : AppCompatActivity()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
-        buttonNext.setOnClickListener {
+        btnNext.setOnClickListener {
             val intent = Intent(this, ThirdActivity::class.java)
             startActivity(intent)
         }
@@ -48,7 +48,7 @@ class SecondActivity : AppCompatActivity()
         rootSet.playTogether(opt1, opt2, opt3)
 
         rootSet.start()
-        buttonNext.isVisible = true
+        btnNext.isVisible = true
         option1.isClickable = false
         option2.isClickable = false
         option3.isClickable = false

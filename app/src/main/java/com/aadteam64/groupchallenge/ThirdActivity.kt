@@ -8,7 +8,6 @@ import android.os.Bundle
 import android.view.View
 import androidx.core.view.isVisible
 import kotlinx.android.synthetic.main.activity_third.*
-import kotlin.system.exitProcess
 
 class ThirdActivity : AppCompatActivity() {
 
@@ -16,8 +15,8 @@ class ThirdActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_third)
 
-        buttonClose.setOnClickListener {
-            val intent = Intent(this, SpinActivity::class.java)
+        btnNext.setOnClickListener {
+            val intent = Intent(this, FourthActivity::class.java)
             startActivity(intent)
         }
     }
@@ -64,10 +63,8 @@ class ThirdActivity : AppCompatActivity() {
         imagePic2.isClickable = false
         imagePic3.isClickable = false
         imagePic4.isClickable = false
-        buttonClose.isVisible = true
+        btnNext.isVisible = true
     }
 
-    fun close (view: View) {
-        finishAffinity()
-    }
+
 }
