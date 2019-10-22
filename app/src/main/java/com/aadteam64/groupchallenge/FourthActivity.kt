@@ -15,11 +15,12 @@ class FourthActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fourth)
-        val imgView = ObjectAnimator.ofFloat(image_view_stars, "alpha", 2.0f, 0.0f)
-        imgView.duration = 2000
-        val scaleX = ObjectAnimator.ofFloat(image_view_stars, "scaleX", 1.0f, 1.3f)
-        scaleX.duration = 500
+        ObjectAnimator.ofFloat(image_view_stars, "translationX", 120f, 10f).apply {
+            duration = 2000
+            start()
+        }
     }
+
 
     fun correct (view: View) {
 

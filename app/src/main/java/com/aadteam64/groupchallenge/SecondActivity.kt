@@ -19,7 +19,7 @@ SecondActivity : AppCompatActivity()
         setContentView(R.layout.activity_second)
 
         buttonNext.setOnClickListener {
-            val intent = Intent(this, FourthActivity::class.java)
+            val intent = Intent(this, ThirdActivity::class.java)
             startActivity(intent)
         }
     }
