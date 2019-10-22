@@ -9,7 +9,8 @@ import android.view.View
 import androidx.core.view.isVisible
 import kotlinx.android.synthetic.main.activity_second.*
 
-class SecondActivity : AppCompatActivity()
+class
+SecondActivity : AppCompatActivity()
 {
 
     override fun onCreate(savedInstanceState: Bundle?)
